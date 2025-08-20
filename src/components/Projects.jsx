@@ -66,6 +66,14 @@ const Projects = () => {
       link: 'https://yonadhan.github.io/spacewebsite/',
     },
     {
+      title: 'Swiggy Clone',
+      image: '../images/projects/swiggy.png',
+      subtitle: 'Using HTML and CSS',
+      description: 'A beautiful landing page of Swiggy website',
+      technologies: ['HTML', 'CSS'],
+      link: 'https://yonadhan.github.io/SwiggyWebsiteClone/',
+    },
+    {
       title: 'Coffee Website',
       image: '../images/projects/coffee.png',
       subtitle: 'Using AOS animation',

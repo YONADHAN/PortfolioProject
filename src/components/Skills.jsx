@@ -3,7 +3,7 @@ const Skills = () => {
     {
       title: 'Languages',
       icon: '💻',
-      skills: ['JavaScript', 'Python', 'Java'],
+      skills: ['JavaScript', 'Python'],
     },
     {
       title: 'Frontend',
@@ -13,7 +13,7 @@ const Skills = () => {
     {
       title: 'Backend',
       icon: '⚙️',
-      skills: ['Node.js', 'Express', 'RESTful APIs', 'Microservices'],
+      skills: ['Node.js', 'Express', 'RESTful APIs'],
     },
     {
       title: 'Databases',
@@ -23,17 +23,12 @@ const Skills = () => {
     {
       title: 'Tools & Technologies',
       icon: '🛠️',
-      skills: ['Git', 'Docker', 'AWS', 'Postman', 'Figma'],
+      skills: ['Git', 'AWS', 'Postman', 'Figma'],
     },
     {
       title: 'Architecture',
       icon: '🏗️',
-      skills: [
-        'MVC Architecture',
-        'Clean Architecture',
-        'Microservices',
-        'RESTful APIs',
-      ],
+      skills: ['MVC Architecture', 'Clean Architecture', 'RESTful APIs'],
     },
   ]
 

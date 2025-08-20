@@ -34,14 +34,14 @@ const Contact = () => {
     {
       icon: '📧',
       label: 'Email',
-      value: 'yonadhanmm@gmail.com',
-      link: 'mailto:yonadhanmm@gmail.com',
+      value: 'yonadhanmmdev@gmail.com',
+      link: 'mailto:yonadhanmmdev@gmail.com',
     },
     {
       icon: '💼',
       label: 'LinkedIn',
-      value: 'linkedin.com/in/yonadhan-mathew-1b',
-      link: 'https://www.linkedin.com/in/yonadhan-mathew-1b/',
+      value: 'linkedin.com/in/yonadhanmm',
+      link: 'https://www.linkedin.com/in/yonadhanmm/',
     },
     {
       icon: '🐙',
@@ -52,8 +52,8 @@ const Contact = () => {
     {
       icon: '🌐',
       label: 'Website',
-      value: 'yonadhan.dev',
-      link: 'https://yonadhan.dev',
+      value: 'yonadhan.online',
+      link: 'https://yonadhan.online',
     },
   ]
 

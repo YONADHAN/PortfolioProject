@@ -41,19 +41,36 @@ const About = () => {
               <div className='grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm'>
                 <div className='flex items-center space-x-2'>
                   <span className='text-blue-500'>📧</span>
-                  <span>yonadhan@example.com</span>
+                  <span className='hover:cursor-pointer'>
+                    yonadhan.mm.dev@gmail.com
+                  </span>
                 </div>
                 <div className='flex items-center space-x-2'>
                   <span className='text-blue-500'>💼</span>
-                  <span>linkedin.com/in/yonadhan</span>
+                  <span
+                    className='hover:cursor-pointer'
+                    onClick={() =>
+                      window.open(
+                        'https://www.linkedin.com/in/yonadhanmm/',
+                        '_blank'
+                      )
+                    }
+                  >
+                    linkedin.com/in/yonadhanmm
+                  </span>
                 </div>
                 <div className='flex items-center space-x-2'>
                   <span className='text-blue-500'>🐙</span>
-                  <span>github.com/yonadhan</span>
+                  <span
+                    className='hover:cursor-pointer'
+                    onClick={() => window.open('https://github.com/YONADHAN')}
+                  >
+                    github.com/yonadhan
+                  </span>
                 </div>
                 <div className='flex items-center space-x-2'>
                   <span className='text-blue-500'>🌐</span>
-                  <span>yonadhan.dev</span>
+                  <span>yonadhan.online</span>
                 </div>
               </div>
             </div>
@@ -64,7 +81,7 @@ const About = () => {
             <div className='relative'>
               <div className='w-80 h-80 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full absolute -top-4 -left-4'></div>
               <img
-                src='/placeholder.svg?height=320&width=320'
+                src='/images/Yonadhan/Yonadhan Profile Photo.jpeg'
                 alt='Yonadhan MM - Full Stack Developer'
                 className='w-80 h-80 rounded-full object-cover border-8 border-white shadow-xl relative z-10'
               />

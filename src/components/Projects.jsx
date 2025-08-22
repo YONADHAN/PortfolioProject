@@ -40,6 +40,33 @@ const Projects = () => {
     },
   ]
 
+  const reactProjects = [
+    {
+      title: 'Netflix Clone',
+      image: '../images/projects/Netflix.png',
+      subtitle: 'Using ReactJS and Tailwind CSS',
+      description: 'A beautiful clone of Netflix landing page',
+      technologies: ['ReactJS', 'Tailwind CSS'],
+      link: 'https://netflicxclone.netlify.app/',
+    },
+    {
+      title: 'Olx Clone',
+      image: '../images/projects/Olx.png',
+      subtitle: 'Using ReactJS and Tailwind CSS',
+      description: 'A beautiful landing page of Olx website',
+      technologies: ['ReactJS', 'Tailwind CSS'],
+      link: 'https://olxwebsiteclon.netlify.app/',
+    },
+    {
+      title: 'Todo Application',
+      image: '../images/projects/Todo.png',
+      subtitle: 'Using ReactJS and CSS',
+      description: 'A simple Todo Application',
+      technologies: ['ReactJS', 'CSS'],
+      link: 'https://reacttodoapplicatio.netlify.app/',
+    },
+  ]
+
   const staticProjects = [
     {
       title: 'Uber',
@@ -208,7 +235,55 @@ const Projects = () => {
             </div>
           ))}
         </div> */}
-        <h1 className='text-3xl text-center mb-5 '>Static Websites</h1>
+
+        <h1 className='text-3xl text-center mb-5 '>React Frontend Websites</h1>
+        <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
+          {reactProjects.map((project, index) => (
+            <div
+              key={index}
+              className='bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden'
+            >
+              <div className='h-48 bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center'>
+                <img
+                  src={`/${project.image ? project.image : ''}`}
+                  alt={`${project.title} Screenshot`}
+                  className='max-w-full max-h-full object-cover'
+                />
+              </div>
+
+              <div className='p-6'>
+                <h3 className='text-xl font-bold text-gray-800 mb-2'>
+                  {project.title}
+                </h3>
+                <p className='text-blue-600 font-medium mb-3'>
+                  {project.subtitle}
+                </p>
+
+                <p className='text-gray-600 mb-4'>{project.description}</p>
+                <p className='text-blue-600 italic mb-3 cursor-pointer'>
+                  {project.link ? (
+                    <p onClick={() => window.open(project.link)}>
+                      {project.title} link
+                    </p>
+                  ) : (
+                    ''
+                  )}
+                </p>
+                <div className='flex flex-wrap gap-2'>
+                  {project.technologies.map((tech, techIndex) => (
+                    <span
+                      key={techIndex}
+                      className='bg-gray-100 px-2 py-1 rounded text-xs font-medium text-gray-700'
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+        <h1 className='text-3xl text-center mb-5 mt-16 '>Static Websites</h1>
         <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
           {staticProjects.map((project, index) => (
             <div

@@ -1,6 +1,6 @@
 'use client'
-
 import { useState } from 'react'
+import emailjs from 'emailjs-com'
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -9,6 +9,8 @@ const Contact = () => {
     subject: '',
     message: '',
   })
+
+  const [status, setStatus] = useState('')
 
   const handleChange = (e) => {
     setFormData({
@@ -19,15 +21,25 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    // Handle form submission here
-    console.log('Form submitted:', formData)
-    // Reset form
-    setFormData({
-      name: '',
-      email: '',
-      subject: '',
-      message: '',
-    })
+    setStatus('Sending...')
+
+    emailjs
+      .send(
+        import.meta.env.VITE_SERVICE_ID, // 🔑 replace with EmailJS Service ID
+        import.meta.env.VITE_TEMPLATE_ID, // 🔑 replace with EmailJS Template ID
+        formData,
+        import.meta.env.VITE_PUBLIC_KEY // 🔑 replace with EmailJS Public Key
+      )
+      .then(
+        () => {
+          setStatus('✅ Message sent successfully!')
+          setFormData({ name: '', email: '', subject: '', message: '' })
+        },
+        (error) => {
+          console.error(error)
+          setStatus('❌ Failed to send message. Try again later.')
+        }
+      )
   }
 
   const contactInfo = [
@@ -165,6 +177,10 @@ const Contact = () => {
                 Send Message
               </button>
             </form>
+
+            {status && (
+              <p className='mt-4 text-center text-sm text-gray-700'>{status}</p>
+            )}
           </div>
 
           {/* Contact Information */}

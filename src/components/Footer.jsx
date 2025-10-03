@@ -61,7 +61,7 @@ const Footer = () => {
           {/* About Section */}
           <div className='lg:col-span-2'>
             <h3 className='text-2xl font-bold mb-4 text-blue-400'>
-              Yonadhan Mathew
+              Yonadhan M M
             </h3>
             <p className='text-gray-300 mb-6 leading-relaxed'>
               Full-stack developer passionate about creating efficient and
@@ -148,7 +148,7 @@ const Footer = () => {
         <div className='max-w-6xl mx-auto px-6 py-6'>
           <div className='flex flex-col sm:flex-row justify-between items-center'>
             <p className='text-gray-400 text-sm mb-4 sm:mb-0'>
-              &copy; 2025 Yonadhan Mathew. All rights reserved.
+              &copy; 2025 Yonadhan M M. All rights reserved.
             </p>
 
             <div className='flex items-center space-x-6'>

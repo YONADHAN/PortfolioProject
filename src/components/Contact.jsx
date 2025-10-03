@@ -211,7 +211,7 @@ const Contact = () => {
               </div>
             </div>
 
-            {/* Quick Response Promise */}
+            {/* Quick Response Promise
             <div className='bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl p-8 text-white'>
               <h3 className='text-xl font-bold mb-4'>
                 Quick Response Guaranteed
@@ -227,7 +227,7 @@ const Contact = () => {
                   Usually responds in a few hours
                 </span>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
